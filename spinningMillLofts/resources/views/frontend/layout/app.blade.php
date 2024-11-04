@@ -37,14 +37,14 @@
 
     <!-- Template Stylesheet -->
     <link href="{{asset('frontend/css/style.css')}}" rel="stylesheet" />
+    <link href="{{asset('frontend/css/mediaQuery.css')}}" rel="stylesheet" />
   </head>
 
   <body>
     <!-- Spinner Start -->
     <div
       id="spinner"
-      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
-    >
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
       <div class="spinner-grow text-primary" role="status"></div>
     </div>
     <!-- Spinner End -->
@@ -89,24 +89,24 @@
     <!-- Topbar End -->
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
-      <a href="index.html" class="navbar-brand d-flex align-items-center">
-        <h1 class="m-0">Spinning Mill Lofts</h1>
+    <nav class="navbar navbar-expand-lg bg-white  navbar-light px-4 px-lg-5 py-lg-0">
+      <a href="{{route('index')}}" class="navbar-brand d-flex align-items-center">
+        {{-- <h1 class="m-0">Spinning Mill Lofts</h1> --}}
+        <img src="frontend/img/asset/logo.png" alt="Logo" width="90" height="90" class="d-inline-block align-text-top" />
       </a>
       <button
         type="button"
         class="navbar-toggler"
         data-bs-toggle="collapse"
-        data-bs-target="#navbarCollapse"
-      >
+        data-bs-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto py-3 py-lg-0">
             <a href="{{ route('index') }}" class="nav-item nav-link {{ Request::is('/') ? 'active' : '' }}">Home</a>
             <a href="{{ route('about') }}" class="nav-item nav-link {{ Request::is('about') ? 'active' : '' }}">About Us</a>
-            <a href="{{ route('service') }}" class="nav-item nav-link {{ Request::is('service') ? 'active' : '' }}">Our Services</a>
-            <a href="{{ route('project') }}" class="nav-item nav-link {{ Request::is('project') ? 'active' : '' }}">Our Projects</a>
+            <a href="{{ route('service') }}" class="nav-item nav-link {{ Request::is('our-service') ? 'active' : '' }}">Our Services</a>
+            <a href="{{ route('project') }}" class="nav-item nav-link {{ Request::is('our-project') ? 'active' : '' }}">Our Projects</a>
             <a href="{{ route('contact') }}" class="nav-item nav-link {{ Request::is('contact') ? 'active' : '' }}">Contact Us</a>
         </div>        
       </div>
@@ -122,11 +122,13 @@
       <div class="container py-5">
         <div class="row g-5">
           <div class="col-lg-3 col-md-6">
-            <h1 class="text-white mb-4">
-              <!-- <i class="fa fa-building text-primary me-3"></i> -->
+            {{-- <h1 class="text-white mb-4">
               Spinning Mill
               Lofts
-            </h1>
+            </h1> --}}
+            <div class="mb-2">
+              <img class="img-fluid" src="frontend/img/asset/logo.png" alt="Logo" width="50%"  />
+            </div>
             <p>
               Discover modern living in a historical setting at Spinning Mill
               Lofts, where the elegance of the past meets today’s sustainable

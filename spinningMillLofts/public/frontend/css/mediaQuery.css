@@ -1,0 +1,15 @@
+@media screen and (max-width: 426px) {
+    .sliderSection h5{
+        font-size: 10px;
+    }
+    .sliderSection h1{
+        font-size: 10px;
+    }
+    .sliderSection li{
+        font-size: 7px;
+    }
+    .sliderSection a{
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+}

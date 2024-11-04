@@ -4,48 +4,46 @@
      
     <!-- Carousel Start -->
     <div class="container-fluid p-0 mb-5 ">
-        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
             <div class="carousel-inner">
-                <div class="carousel-item active">
+                <div class="carousel-item">
                     <img class="w-100" src="frontend/img/slider/slider1.png" alt="Image" />
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row justify-content-center">
-                                <div class="col-12 col-lg-10">
-                                <h5
-                                    class="text-light text-uppercase mb-3 animated slideInDown"
-                                >
-                                    Welcome to Spinning Mill Lofts
-                                </h5>
-                                <h1 class="display-2 text-light mb-3 animated slideInDown">
-                                    Discover modern living in a historical setting at Spinning
-                                    Mill Lofts
-                                </h1>
-                                <ol class="breadcrumb mb-4 pb-2">
-                                    <li class="breadcrumb-item fs-5 text-light">
-                                    Eco-Friendly Innovations
-                                    </li>
-                                    <li class="breadcrumb-item fs-5 text-light">
-                                    Sustainable Living
-                                    </li>
-                                    <li class="breadcrumb-item fs-5 text-light">
-                                    Historical Elegance
-                                    </li>
-                                </ol>
-                                <a href="{{route('contact')}}" class="btn btn-primary py-3 px-5"
-                                    >More Details</a
-                                >
+                                <div class="col-12 col-lg-10 sliderSection">
+                                    <h5 class="text-light text-uppercase mb-3 animated slideInDown">
+                                        Welcome to Spinning Mill Lofts
+                                    </h5>
+                                    <h1 class="display-2 text-light mb-3 animated slideInDown">
+                                        Discover modern living in a historical setting at Spinning
+                                        Mill Lofts
+                                    </h1>
+                                    <ol class="breadcrumb mb-4 pb-2">
+                                        <li class="breadcrumb-item text-light">
+                                        Eco-Friendly Innovations
+                                        </li>
+                                        <li class="breadcrumb-item text-light">
+                                        Sustainable Living
+                                        </li>
+                                        <li class="breadcrumb-item text-light">
+                                        Historical Elegance
+                                        </li>
+                                    </ol>
+                                    <a href="{{route('contact')}}" class="btn btn-primary"
+                                        >More Details
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item active">
                     <img class="w-100" src="frontend/img/slider/slider2.png" alt="Image" />
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row justify-content-center">
-                                <div class="col-12 col-lg-10">
+                                <div class="col-12 col-lg-10 sliderSection">
                                 <h5
                                     class="text-light text-uppercase mb-3 animated slideInDown"
                                 >
@@ -55,17 +53,17 @@
                                     Sustainable Living in a Historic Mill
                                 </h1>
                                 <ol class="breadcrumb mb-4 pb-2">
-                                    <li class="breadcrumb-item fs-5 text-light">
+                                    <li class="breadcrumb-item text-light">
                                     Investment Opportunities
                                     </li>
-                                    <li class="breadcrumb-item fs-5 text-light">
+                                    <li class="breadcrumb-item text-light">
                                     Luxury Living
                                     </li>
-                                    <li class="breadcrumb-item fs-5 text-light">
+                                    <li class="breadcrumb-item text-light">
                                     Modern Comfort
                                     </li>
                                 </ol>
-                                <a href="{{route('contact')}}" class="btn btn-primary py-3 px-5"
+                                <a href="{{route('contact')}}" class="btn btn-primary"
                                     >More Details</a
                                 >
                                 </div>
@@ -78,7 +76,7 @@
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row justify-content-center">
-                                <div class="col-12 col-lg-10">
+                                <div class="col-12 col-lg-10 sliderSection">
                                 <h5
                                     class="text-light text-uppercase mb-3 animated slideInDown"
                                 >
@@ -88,17 +86,17 @@
                                     Experience Comfort and Style at Spinning Mill Lofts
                                 </h1>
                                 <ol class="breadcrumb mb-4 pb-2">
-                                    <li class="breadcrumb-item fs-5 text-light">
+                                    <li class="breadcrumb-item text-light">
                                     Investment Opportunities
                                     </li>
-                                    <li class="breadcrumb-item fs-5 text-light">
+                                    <li class="breadcrumb-item text-light">
                                     Luxury Living
                                     </li>
-                                    <li class="breadcrumb-item fs-5 text-light">
+                                    <li class="breadcrumb-item text-light">
                                     Modern Comfort
                                     </li>
                                 </ol>
-                                <a href="{{route('contact')}}" class="btn btn-primary py-3 px-5"
+                                <a href="{{route('contact')}}" class="btn btn-primary"
                                     >More Details</a
                                 >
                                 </div>
@@ -111,7 +109,7 @@
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row justify-content-center">
-                                <div class="col-12 col-lg-10">
+                                <div class="col-12 col-lg-10 sliderSection">
                                 <h5
                                     class="text-light text-uppercase mb-3 animated slideInDown"
                                 >
@@ -121,17 +119,17 @@
                                     Redefine Your Living with Modern Amenities
                                 </h1>
                                 <ol class="breadcrumb mb-4 pb-2">
-                                    <li class="breadcrumb-item fs-5 text-light">
+                                    <li class="breadcrumb-item text-light">
                                     Investment Opportunities
                                     </li>
-                                    <li class="breadcrumb-item fs-5 text-light">
+                                    <li class="breadcrumb-item text-light">
                                     Luxury Living
                                     </li>
-                                    <li class="breadcrumb-item fs-5 text-light">
+                                    <li class="breadcrumb-item text-light">
                                     Modern Comfort
                                     </li>
                                 </ol>
-                                <a href="{{route('contact')}}" class="btn btn-primary py-3 px-5"
+                                <a href="{{route('contact')}}" class="btn btn-primary"
                                     >More Details</a
                                 >
                                 </div>
@@ -144,7 +142,7 @@
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row justify-content-center">
-                                <div class="col-12 col-lg-10">
+                                <div class="col-12 col-lg-10 sliderSection">
                                 <h5
                                     class="text-light text-uppercase mb-3 animated slideInDown"
                                 >
@@ -154,17 +152,17 @@
                                     Luxury Living Meets Historical Charm
                                 </h1>
                                 <ol class="breadcrumb mb-4 pb-2">
-                                    <li class="breadcrumb-item fs-5 text-light">
+                                    <li class="breadcrumb-item text-light">
                                     Investment Opportunities
                                     </li>
-                                    <li class="breadcrumb-item fs-5 text-light">
+                                    <li class="breadcrumb-item text-light">
                                     Luxury Living
                                     </li>
-                                    <li class="breadcrumb-item fs-5 text-light">
+                                    <li class="breadcrumb-item text-light">
                                     Modern Comfort
                                     </li>
                                 </ol>
-                                <a href="{{route('contact')}}" class="btn btn-primary py-3 px-5"
+                                <a href="{{route('contact')}}" class="btn btn-primary"
                                     >More Details</a
                                 >
                                 </div>
@@ -198,8 +196,8 @@
         <div class="container">
         <div class="row g-5">
             <div class="col-lg-6">
-                <div class="position-relative overflow-hidden ps-5 h-100">
-                    <img class="w-100" src="frontend/img/asset/2.png" alt="" style="object-fit: cover" />
+                <div class="position-relative overflow-hidden ">
+                    <img class="w-100" src="frontend/img/asset/2.png" alt=""  />
                 </div>
             </div>
             <div class="col-lg-6">
@@ -446,7 +444,7 @@
             <!-- Electric Vehicle Charging Stations -->
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
             <div class="service-item bg-light overflow-hidden h-100">
-                <img class="img-fluid" src="frontend/img/asset/20.png" alt="" />
+                <img class="img-fluid" src="frontend/img/asset/28.png" alt="" />
                 <div class="service-text position-relative text-center h-100 p-4">
                 <h5 class="mb-3">EV Charging Stations</h5>
                 <p>

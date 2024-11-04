@@ -140,7 +140,7 @@
            <!-- Electric Vehicle Charging Stations -->
            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
            <div class="service-item bg-light overflow-hidden h-100">
-               <img class="img-fluid" src="frontend/img/asset/20.png" alt="" />
+               <img class="img-fluid" src="frontend/img/asset/28.png" alt="" />
                <div class="service-text position-relative text-center h-100 p-4">
                <h5 class="mb-3">EV Charging Stations</h5>
                <p>
