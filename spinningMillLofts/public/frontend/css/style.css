@@ -353,3 +353,55 @@
 .sliderSection a{
   padding: 15px 30px;
 }
+
+
+.whatsAppBtn a {
+  background-color: green;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+/* .whatsAppBtn a{
+  font-size: 20px;
+} */
+
+.modal-content{
+  background-color: #182333e5 !important;
+  color: #fff;
+}
+
+.modal-content img{
+  border-radius: 10px;
+}
+.modal-content h2 ,h3 ,h4 ,h5 ,h6{
+  color: #fda12b;
+}
+
+.modal-content a{
+  background-color: #fda12b;
+  color: #182333;
+}
+
+
+
+.custom-close-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem; /* Adjust the size of the 'X' */
+  font-weight: bold;
+  line-height: 1;
+  opacity: 1; /* Ensure it's fully visible */
+  text-shadow: none; /* Remove any Bootstrap default shadow */
+}
+
+.custom-close-btn:hover {
+  color: #f8f9fa; /* Slightly lighter white on hover */
+  opacity: 0.8; /* Optional hover effect */
+}
+
+.custom-close-btn::before {
+  content: "×"; /* Unicode for the 'X' character */
+  display: inline-block;
+}

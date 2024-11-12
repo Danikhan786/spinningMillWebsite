@@ -80,6 +80,18 @@
    </div>
    <!-- About End -->
 
+   {{-- blackStone Links start --}}
+   <div class="container -xxl py-5">
+    <div class="container">
+      <div class="text-center">
+        <h2>BlackstoneQ</h2>
+        <p>The BlackstoneQ focuses on sustainable real estate development, offering services in construction, property management, financial planning, and green solutions. The team specializes in energy-efficient designs and resource-conserving methods, ensuring innovative and environmentally friendly projects. They also provide consulting services for sustainable design and exclusive investment opportunities. BlackstoneQ is dedicated to helping clients achieve their development goals with a focus on environmental stewardship and strategic planning.</p>
+        <p>For more details, visit <a href="https://blackstoneq.com/">BlackstoneQ</a>.</p>
+      </div>
+    </div>
+   </div>
+   {{-- blackStone Links end --}}
+
     <!-- contact start -->
     <div class="container bg-dark rounded p-5">
         <div class="row g-5 align-items-end">

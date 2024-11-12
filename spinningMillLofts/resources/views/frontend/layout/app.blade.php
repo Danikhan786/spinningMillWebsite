@@ -17,6 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Icon Font Stylesheet -->
     <link
@@ -92,7 +93,7 @@
     <nav class="navbar navbar-expand-lg bg-white  navbar-light px-4 px-lg-5 py-lg-0">
       <a href="{{route('index')}}" class="navbar-brand d-flex align-items-center">
         {{-- <h1 class="m-0">Spinning Mill Lofts</h1> --}}
-        <img src="frontend/img/asset/logo.png" alt="Logo" width="90" height="90" class="d-inline-block align-text-top" />
+        <img src="/frontend/img/asset/logo.png" alt="Logo" width="90" height="90" class="d-inline-block align-text-top" />
       </a>
       <button
         type="button"
@@ -105,9 +106,11 @@
         <div class="navbar-nav ms-auto py-3 py-lg-0">
             <a href="{{ route('index') }}" class="nav-item nav-link {{ Request::is('/') ? 'active' : '' }}">Home</a>
             <a href="{{ route('about') }}" class="nav-item nav-link {{ Request::is('about') ? 'active' : '' }}">About Us</a>
-            <a href="{{ route('service') }}" class="nav-item nav-link {{ Request::is('our-service') ? 'active' : '' }}">Our Services</a>
-            <a href="{{ route('project') }}" class="nav-item nav-link {{ Request::is('our-project') ? 'active' : '' }}">Our Projects</a>
+            <a href="{{ route('property') }}" class="nav-item nav-link {{ Request::is('property') ? 'active' : '' }}">Property</a>
+            <a href="{{ route('service') }}" class="nav-item nav-link {{ Request::is('features') ? 'active' : '' }}">Features</a>
+            <a href="{{ route('project') }}" class="nav-item nav-link {{ Request::is('emeneties') ? 'active' : '' }}">Emeneties</a>
             <a href="{{ route('contact') }}" class="nav-item nav-link {{ Request::is('contact') ? 'active' : '' }}">Contact Us</a>
+            {{-- <a href="{{ route('login') }}" class="nav-item nav-link {{ Request::is('contact') ? 'active' : '' }}">Login</a> --}}
         </div>        
       </div>
     </nav>
@@ -127,7 +130,7 @@
               Lofts
             </h1> --}}
             <div class="mb-2">
-              <img class="img-fluid" src="frontend/img/asset/logo.png" alt="Logo" width="50%"  />
+              <img class="img-fluid" src="/frontend/img/asset/logo.png" alt="Logo" width="50%"  />
             </div>
             <p>
               Discover modern living in a historical setting at Spinning Mill
@@ -137,10 +140,10 @@
             <div class="d-flex pt-2">
               <a
                 class="btn btn-square btn-outline-primary me-1"
-                href="https://twitter.com/spinningmill"
-                ><i class="fab fa-twitter"></i
+                href="https://www.instagram.com/spinningmillloft"
+                ><i class="fab fa-instagram"></i
               ></a>
-              <a
+              {{-- <a
                 class="btn btn-square btn-outline-primary me-1"
                 href="https://facebook.com/spinningmill"
                 ><i class="fab fa-facebook-f"></i
@@ -154,7 +157,7 @@
                 class="btn btn-square btn-outline-primary me-0"
                 href="https://linkedin.com/spinningmill"
                 ><i class="fab fa-linkedin-in"></i
-              ></a>
+              ></a> --}}
             </div>
           </div>
           <div class="col-lg-3 col-md-6">
@@ -164,7 +167,7 @@
               Millbury, MA, USA
             </p>
             <p><i class="fa fa-phone-alt me-3"></i>+774 262 1252</p>
-            <p><i class="fa fa-envelope me-3"></i>salim@selimlahoud.com</p>
+            <p style="font-size: 15px;"><i class="fa fa-envelope me-3"></i>sipinningmilllofts@gmail.com</p>
           </div>
           <div class="col-lg-3 col-md-6">
             <h4 class="text-light mb-4">Quick Links</h4>

@@ -464,11 +464,9 @@
         </div>
         </div>
     </div>
-
     <!-- Service End -->
 
     <!-- Project start  -->
-
     <div class="container">
         <div class="row g-5 align-items-end mb-5">
         <div class="text-center">
@@ -545,7 +543,55 @@
         </div>
         </div>
     </div>
+    <!-- Project end -->
 
+    <!-- Proerty start  -->
+    <div class="container">
+        <div class="row g-5 align-items-end">
+            <div class="text-center">
+                <h3 class="text-primary pt-4 pb-2 text-uppercase">Property</h3>
+            </div>
+        </div>
+
+        <!-- Service Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                {{-- <div class="row g-5 align-items-end mb-5"></div> --}}
+                <div class="row g-4 justify-content-center">
+                    @forelse ($properties as $property)
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-item bg-light overflow-hidden h-100">
+                            <img class="rounded-5"src="{{ asset('storage/' . $property->propertyImage) }}" width="100%" height="250px" alt="" />
+                            <div class="position-relative h-100 p-4"S>
+                                <h6 class="mb-3">{{ $property->propertyName }}</h6>
+                                <h5 class="mb-3">$300000 - ${{ $property->propertyPrice }}</h5>
+                                <div class="d-flex justify-content-between align-iterm-center flex-wrap">
+                                    <div><b>{{ $property->bed}} </b> Beds</div>
+                                    <div><b>{{ $property->bath}} </b> Baths</div>
+                                    
+                                    <div>
+                                        <b>{{ $property->propertySqft}} </b> sqft
+                                    </div>
+                                </div>
+                                <p class="mt-3">
+                                    {{-- {{ $property->location}}  --}}
+                                </p>
+                                <div class="text-center">
+                                    <a class="bg-dark py-2 px-3 rounded-pill" href="{{ route('propertybyId', $property->id) }}">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    @empty
+                        <p>There are no property</p>
+                @endforelse
+                </div>
+            </div>
+            <div class="wow fadeInUp pt-4 text-center" data-wow-delay="0.3s">
+                <a class="btn btn-primary py-3 px-5" href="{{route('property')}}">Show More</a>
+            </div>
+        </div>
+    </div>
     <!-- Project end -->
 
     <!-- new section start -->
@@ -568,7 +614,7 @@
     <!-- new section end -->
 
     <!-- Testimonial Start -->
-    <div class="container-xxl py-5">
+    {{-- <div class="container-xxl py-5">
         <div class="container">
         <div class="row g-5">
             <div class="col-lg-5">
@@ -640,7 +686,64 @@
             </div>
         </div>
         </div>
-    </div>
+    </div> --}}
     <!-- Testimonial End -->
+
+    {{-- popup Section start --}}
+    <div>
+        <!-- Button trigger modal -->
+        {{-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Launch demo modal
+        </button> --}}
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content bg-light">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close custom-close-btn" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="service-item overflow-hidden h-100">
+                            <h2 class="text-center lig" id="exampleModalLabel">Reserve Your Unit</h2>
+                            <img src="{{ asset('storage/' . $property->propertyImage) }}" width="100%" height="200px" alt="" />
+                            <div class="position-relative h-100 p-4">
+                                {{-- <h6 class="mb-3">{{ $property->propertyName }}</h6> --}}
+                                <h5 class="mb-3 text-center">$300000 - ${{ $property->propertyPrice }}</h5>
+                                <div class="d-flex justify-content-evenly align-iterm-center flex-wrap">
+                                    <div><b>{{ $property->bed }} </b> Beds</div>
+                                    <div><b>{{ $property->bath }} </b> Baths</div>
+                                    <div><b>{{ $property->propertySqft }} </b> Sqft</div>
+                                </div>
+                                <p class="mt-3 text-center">
+                                    {{-- {{ $property->location }}  --}}
+                                </p>
+                                <div class="text-center">
+                                    <a class="py-2 px-3 rounded-pill" href="{{ route('propertybyId', $property->id) }}">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{-- popup Section end --}}
+
+    <!-- Script for Auto Modal -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const myModal = new bootstrap.Modal(document.getElementById('exampleModal'), {
+                keyboard: false
+            });
+            myModal.show();
+    
+            // Automatically hide the modal after 3 seconds
+            setTimeout(() => {
+                myModal.hide();
+            }, 3000); // 3000 milliseconds = 3 seconds
+        });
+    </script>
+
 
   @endsection
