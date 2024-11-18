@@ -8,7 +8,7 @@
         data-wow-delay="0.1s">
         <div class="container text-center py-5">
             <h1 class="display-4 text-white animated slideInDown mb-4">
-            Our Projects
+                Emeneties
             </h1>
             <nav aria-label="breadcrumb animated slideInDown">
             <ol class="breadcrumb justify-content-center mb-0">
@@ -16,7 +16,7 @@
                 <a class="text-white" href="{{route('index')}}">Home</a>
                 </li>
                 <li class="breadcrumb-item text-primary active" aria-current="page">
-                our Projects
+                   Emeneties
                 </li>
             </ol>
             </nav>
@@ -29,7 +29,7 @@
    <div class="container">
        <div class="row g-5 align-items-end mb-5">
        <div class="text-center">
-           <h3 class="text-primary pt-4 pb-2 text-uppercase">Our Projects</h3>
+           <h3 class="text-primary pt-4 pb-2 text-uppercase">Emeneties</h3>
 
            <p class="text-center">
            Redeveloped an outdated industrial building into a modern,

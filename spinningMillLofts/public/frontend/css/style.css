@@ -405,3 +405,8 @@
   content: "×"; /* Unicode for the 'X' character */
   display: inline-block;
 }
+
+
+#sliderImg{
+  height: 480px;
+}

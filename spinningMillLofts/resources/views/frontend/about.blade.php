@@ -29,7 +29,7 @@
        <div class="row g-5">
            <div class="col-lg-6">
                <div class="position-relative overflow-hidden ps-5 h-100">
-                   <img class="w-100" src="frontend/img/asset/2.png" alt="" style="object-fit: cover" />
+                <img  src="frontend/img/asset/30.png" width="100%" id="sliderImg" alt=""  />
                </div>
            </div>
            <div class="col-lg-6">

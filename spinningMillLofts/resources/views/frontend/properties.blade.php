@@ -72,24 +72,24 @@
         <div class="mb-5">
             <div id="carouselExampleFade" class="carousel slide carousel-fade">
                 <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="frontend/img/asset/img1.png" class="d-block w-100" alt="img1">
-                </div>
-                <div class="carousel-item">
-                    <img src="frontend/img/asset/img2.png" class="d-block w-100" alt="img2">
-                </div>
-                <div class="carousel-item">
-                    <img src="frontend/img/asset/img3.png" class="d-block w-100" alt="img3">
-                </div>
-                <div class="carousel-item">
-                    <img src="frontend/img/asset/img4.png" class="d-block w-100" alt="img4">
-                </div>
-                <div class="carousel-item">
-                    <img src="frontend/img/asset/img5.png" class="d-block w-100" alt="img5">
-                </div>
-                <div class="carousel-item">
-                    <img src="frontend/img/asset/img6.png" class="d-block w-100" alt="img6">
-                </div>
+                    <div class="carousel-item active">
+                        <img src="frontend/img/asset/img1.png" class="d-block w-100" alt="img1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="frontend/img/asset/img2.png" class="d-block w-100" alt="img2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="frontend/img/asset/img3.png" class="d-block w-100" alt="img3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="frontend/img/asset/img4.png" class="d-block w-100" alt="img4">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="frontend/img/asset/img5.png" class="d-block w-100" alt="img5">
+                    </div>
+                    {{-- <div class="carousel-item">
+                        <img src="frontend/img/asset/img6.png" class="d-block w-100" alt="img6">
+                    </div> --}}
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>

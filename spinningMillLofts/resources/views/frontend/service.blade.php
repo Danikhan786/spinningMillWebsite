@@ -10,7 +10,7 @@
      >
        <div class="container text-center py-5">
          <h1 class="display-4 text-white animated slideInDown mb-4">
-           Our Services
+           Features
          </h1>
          <nav aria-label="breadcrumb animated slideInDown">
            <ol class="breadcrumb justify-content-center mb-0">
@@ -18,7 +18,7 @@
                <a class="text-white" href="{{route('index')}}">Home</a>
              </li>
              <li class="breadcrumb-item text-primary active" aria-current="page">
-               Our Services
+                Features
              </li>
            </ol>
          </nav>
@@ -31,7 +31,7 @@
        <div class="container">
        <div class="row g-5 align-items-end mb-5">
            <div class="text-center">
-           <h3 class="text-primary text-uppercase">Our Services</h3>
+           <h3 class="text-primary text-uppercase">Features</h3>
            {{-- <h2 class="display-6 mb-0">
                Sustainable Living & Historic Restoration
            </h2> --}}

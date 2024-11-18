@@ -6,13 +6,13 @@
     <div class="container-fluid p-0 mb-5 ">
         <div id="header-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
             <div class="carousel-inner">
-                <div class="carousel-item">
+                <div class="carousel-item active">
                     <img class="w-100" src="frontend/img/slider/slider1.png" alt="Image" />
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row justify-content-center">
-                                <div class="col-12 col-lg-10 sliderSection">
-                                    <h5 class="text-light text-uppercase mb-3 animated slideInDown">
+                                <div class="col-12 col-lg-10 sliderSection position-absolute top-0">
+                                    <h5 class="text-light text-uppercase mb-3 animated slideInDown ">
                                         Welcome to Spinning Mill Lofts
                                     </h5>
                                     <h1 class="display-2 text-light mb-3 animated slideInDown">
@@ -38,7 +38,40 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item active">
+                <div class="carousel-item">
+                    <img class="w-100 " src="frontend/img/slider/slider5.png" alt="Image" />
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-12 col-lg-10 sliderSection position-absolute top-0">
+                                <h5
+                                    class="text-light text-uppercase mb-3 animated slideInDown"
+                                >
+                                    Welcome to Spinning Mill Lofts
+                                </h5>
+                                <h1 class="display-2 text-light mb-3 animated slideInDown">
+                                    Luxury Living Meets Historical Charm
+                                </h1>
+                                <ol class="breadcrumb mb-4 pb-2">
+                                    <li class="breadcrumb-item text-light">
+                                    Investment Opportunities
+                                    </li>
+                                    <li class="breadcrumb-item text-light">
+                                    Luxury Living
+                                    </li>
+                                    <li class="breadcrumb-item text-light">
+                                    Modern Comfort
+                                    </li>
+                                </ol>
+                                <a href="{{route('contact')}}" class="btn btn-primary"
+                                    >More Details</a
+                                >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{-- <div class="carousel-item">
                     <img class="w-100" src="frontend/img/slider/slider2.png" alt="Image" />
                     <div class="carousel-caption">
                         <div class="container">
@@ -70,13 +103,13 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
                 <div class="carousel-item">
                     <img class="w-100" src="frontend/img/slider/slider3.png" alt="Image" />
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row justify-content-center">
-                                <div class="col-12 col-lg-10 sliderSection">
+                                <div class="col-12 col-lg-10 sliderSection position-absolute top-0">
                                 <h5
                                     class="text-light text-uppercase mb-3 animated slideInDown"
                                 >
@@ -104,7 +137,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
+                {{-- <div class="carousel-item">
                     <img class="w-100" src="frontend/img/slider/slider4.png" alt="Image" />
                     <div class="carousel-caption">
                         <div class="container">
@@ -136,40 +169,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="w-100" src="frontend/img/slider/slider5.png" alt="Image" />
-                    <div class="carousel-caption">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-12 col-lg-10 sliderSection">
-                                <h5
-                                    class="text-light text-uppercase mb-3 animated slideInDown"
-                                >
-                                    Welcome to Spinning Mill Lofts
-                                </h5>
-                                <h1 class="display-2 text-light mb-3 animated slideInDown">
-                                    Luxury Living Meets Historical Charm
-                                </h1>
-                                <ol class="breadcrumb mb-4 pb-2">
-                                    <li class="breadcrumb-item text-light">
-                                    Investment Opportunities
-                                    </li>
-                                    <li class="breadcrumb-item text-light">
-                                    Luxury Living
-                                    </li>
-                                    <li class="breadcrumb-item text-light">
-                                    Modern Comfort
-                                    </li>
-                                </ol>
-                                <a href="{{route('contact')}}" class="btn btn-primary"
-                                    >More Details</a
-                                >
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </div> --}}
+               
             </div>
             <button
                 class="carousel-control-prev"
@@ -197,7 +198,7 @@
         <div class="row g-5">
             <div class="col-lg-6">
                 <div class="position-relative overflow-hidden ">
-                    <img class="w-100" src="frontend/img/asset/2.png" alt=""  />
+                    <img  src="frontend/img/asset/30.png" width="100%" id="sliderImg" alt=""  />
                 </div>
             </div>
             <div class="col-lg-6">
@@ -315,13 +316,13 @@
                 </div>
                 <div class="col-lg-6">
                 <div
-                    class="position-relative overflow-hidden  h-100"
-                    style="min-height: 400px" >
+                    class="position-relative overflow-hidden "
+                    >
                     <img
-                    class="position-absolute w-100 h-100"
-                    src="frontend/img/asset/19.png"
+                    class="w-100"
+                    src="frontend/img/asset/29.jpeg"
                     alt=""
-                    style="object-fit: cover"
+                    id="sliderImg"
                     />
                 </div>
                 </div>
